@@ -54,19 +54,55 @@ if(x==0){
       }
 
       static void q2(){
+        int count=0;
         System.out.println("please enter your string where you want to remove white space");
         Scanner sc = new Scanner(System.in);
-
+       
                 String a=sc.nextLine(); 
+                for(int k =0;k<a.length();k++){ 
+                    if(a.charAt(k)==' '){      
+                      count++;      
+                        
+                    }}
+                    
+                char ab[]=new char[(a.length())-count];
+                             
+    for(int i =0;i<a.length();i++){ 
+      if(a.charAt(i)==' '){   
+               continue;
+              }
+      else{
+        int j=0;    
+         ab[j]=a.charAt(i);
+         j++;
+                 }
+      for(char e:ab){System.out.print(e);}
+    }   
+    
+ }
+       /*
+       //alter method for que .no. 2
+       static void q2(){
+        int count=0;
+        System.out.println("please enter your string where you want to remove white space");
+        Scanner sc = new Scanner(System.in);
+       
+                String a=sc.nextLine(); 
+                  String ab="";                 
     for(int i =0;i<a.length();i++){ 
       if(a.charAt(i)==' '){
           System.out.print("");
+          count++;
       }
-      else{
+      else{         
+     
           System.out.print(a.charAt(i));
       }
     }   
          } 
+*/
+  
+         
 
          static void q3(){
             Scanner sc = new Scanner(System.in);
